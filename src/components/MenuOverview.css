@@ -1,0 +1,122 @@
+.menuoverview-container {
+    border-radius: 20px;
+    background-image: url(../images/background.jpg);
+    background-position: center;
+    background-size: cover;
+    margin: 80px;
+    color: default;
+}
+
+.blur-menu {
+    backdrop-filter: brightness(1.2) blur(10px) contrast(0.4);
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+
+}
+
+
+.menuoverview-container .topsellers-items {
+    padding: 20px;
+}
+
+
+.menuoverview-container .menuoverview-maintext {
+    padding: 50px;
+    font-size: 50px;
+    font-family: Handlee;
+}
+
+.menuoverview-container .topsellers-text {
+    padding: 0 50px;
+    font-size: 36px;
+    font-family: Inter;
+}
+
+.topsellers-items {
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    min-height: 400px;
+
+    width: 100%;
+}
+
+.sampleitem {
+    border: 4px solid white;
+    cursor: pointer;
+    overflow: hidden;
+    height: fit-content;
+    max-width: 400px;
+    border-radius: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 30px;
+    min-width: 300px;
+    background: white;
+    transition: all 0.1s ease-in-out;
+}
+
+.sampleitem:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 15px 0 rgba(0, 0, 0, 0.6);
+}
+
+.item-container {
+    border-radius: 20px 20px 0 0;
+    width: 100%;
+    height: 180px;
+    background-position: center;
+    background-size: cover;
+}
+
+
+.sample {
+    width: 100%;
+    z-index: 1;
+    box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.9);
+    color: default;
+    font-family: Handlee;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-weight: 900;
+}
+
+.sampleitem h3 {
+    padding: 20px;
+    font-weight: 900;
+    font-style: italic;
+    letter-spacing: 3px;
+    font-size: 27px;
+}
+
+.sample p {
+    margin-left: 30px;
+}
+
+.seefullmenu {
+    padding: 40px 80px;
+    font-size: 24px;
+    font-family: Inter;
+    text-align: left;
+}
+
+
+.seefullmenu button {
+    padding: 20px 70px;
+    font-family: Inter;
+    font-size: 27px;
+    border-radius: 20px;
+    border: 5px solid;
+    color: default;
+    transition: all 0.1s ease-in-out;
+    background: transparent;
+}
+
+.seefullmenu button:hover {
+    transform: rotate(0) scale(1.06);
+}
