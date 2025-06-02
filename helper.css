@@ -1,11 +1,20 @@
 body {
+	display: flex;
+	flex-direction: column;
 	position: relative;
 	z-index: 1;
-	background: #cccccc;
+	background: white;
 	margin: 0;
 	padding: 0;
 	z-index: 0;
 	text-decoration: none;
+}
+
+@media screen and (aspect-ratio < 5/8) {
+	* {
+		padding: 0;
+	}
+
 }
 
 nav.head-nav {

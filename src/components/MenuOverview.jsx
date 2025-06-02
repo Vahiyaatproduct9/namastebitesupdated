@@ -50,7 +50,7 @@ export default function MenuOverview() {
                     </div>
                     <div className="seefullmenu">
                         <button className="seefullmenu-button">
-                            See Full Menu +</button>
+                            See Full Menu</button>
                     </div>
 
                 </div>

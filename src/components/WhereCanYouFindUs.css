@@ -1,4 +1,5 @@
 .wherecanyoufindus-container {
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -37,7 +38,14 @@
     width: 100%;
     justify-content: space-around;
     gap: 20px;
-    padding: 0 80px;
+    padding: 0;
+
+}
+
+@media screen and (max-width: 768px) {
+    .where-can-you-find-us {
+        padding: auto;
+    }
 }
 
 .get-directions {

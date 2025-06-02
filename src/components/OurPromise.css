@@ -79,16 +79,22 @@
 }
 
 .ourpromise-body {
+    gap: 15px;
+    align-self: center;
+    align-items: center;
+    width: 100%;
     display: flex;
-    margin: 20px;
+    flex-wrap: wrap;
+    margin: auto;
     padding: 20px;
     font-family: Open Sans;
     font-weight: 600;
     text-align: justify;
-    justify-content: space-between
+    justify-content: space-evenly;
 }
 
 .ourpromise-pic {
+    max-width: 500px;
     flex-grow: 1;
     min-width: 300px;
     min-height: 300px;
@@ -100,11 +106,16 @@
 }
 
 .ourpromise-text {
+    max-width: 500px;
+    align-items: center;
+    box-sizing: border-box;
+    flex-grow: 1;
+    flex-shrink: 1;
     display: flex;
     flex-direction: column;
-    max-width: 500px;
     display: flex;
-    padding: 50px;
+    padding: auto;
+    padding-top: 20px;
     align-items: center;
 }
 
