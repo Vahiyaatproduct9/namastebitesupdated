@@ -166,8 +166,8 @@ img {
 }
 
 
-@media screen and (max-width: 768px) {
-    .bar li {
+@media screen and (max-width: 1200px) {
+    .bar {
         display: none;
     }
 

@@ -3,19 +3,11 @@ import './Navbar.css';
 import menu from "../images/menu.png";
 export default function Navbar() {
 
+
     let lastscroll = window.scrollY;
     const bar = document.querySelector('.head-nav');
 
-    window.addEventListener('scroll', () => {
 
-        if (window.scrollY > lastscroll) {
-            bar.style.top = "-100px";
-        }
-        else {
-            bar.style.top = "0px";
-        }
-
-    })
 
     function handleToggle() {
         const bar = document.getElementById("bar");
@@ -35,9 +27,29 @@ export default function Navbar() {
             'rgba(51, 51, 65, 1)' : 'transparent';
 
     }
+    window.addEventListener('scroll', () => {
+        const currentScroll = window.scrollY;
+        if (currentScroll > lastscroll) {
+            bar.style.top = "-100px";
+        } else {
+            bar.style.top = "0";
+        }
+        lastscroll = currentScroll;
+    });
+    window.addEventListener('resize', () => {
 
+        document.querySelector('#bar').classList.remove(window.innerWidth > 1200 ? 'box' : 'bar');
+        document.querySelector('#bar').classList.add(window.innerWidth > 1200 ? 'bar' : 'box');
+    });
+    window.addEventListener('load', () => {
+
+        document.querySelector('#bar').classList.remove(window.innerWidth > 1200 ? 'box' : 'bar');
+        document.querySelector('#bar').classList.add(window.innerWidth > 1200 ? 'bar' : 'box');
+    })
     return (
-        <>    <nav className="head-nav">
+        <>    <nav style={{
+            top: 0
+        }} className="head-nav">
             <a href="https://vahiyaatproduct9.github.io/namastebites/">
                 <div className="brand">
                     <img src={logo} alt="Bites Logo Image" />
