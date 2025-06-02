@@ -7,11 +7,6 @@
     color: default;
 }
 
-@media screen and (max-width: 768px) {
-    .menuoverview-container {
-        margin: 0;
-    }
-}
 
 
 .blur-menu {
@@ -20,6 +15,18 @@
     width: 100%;
     border-radius: 20px;
 
+}
+
+@media screen and (max-width: 768px) {
+    .menuoverview-container {
+        background-image: none;
+        background-color: white;
+        margin: 0;
+    }
+
+    .blur-menu {
+        backdrop-filter: none;
+    }
 }
 
 
@@ -131,6 +138,7 @@
 }
 
 @media screen and (max-width: 768px) {
+
     .sampleitem {
         backdrop-filter: opacity(0.4);
         border-radius: 0;
@@ -150,6 +158,7 @@
     }
 
     .seefullmenu button {
+        color: #333;
         margin: 0;
         width: 100%;
         font-size: 20px;
