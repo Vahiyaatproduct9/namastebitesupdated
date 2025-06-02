@@ -138,6 +138,10 @@
 }
 
 @media screen and (max-width: 768px) {
+    .topsellers-items {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    }
 
     .sampleitem {
         backdrop-filter: opacity(0.4);
